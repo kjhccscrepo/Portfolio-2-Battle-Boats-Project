@@ -64,8 +64,6 @@ public:
 
 
     bool isNotGuessable(int a, int b);
-    // checks if a string is in a grids bounds values
-    bool inBounds(std::string input) const;
 
     //actualy display
     std::string display();

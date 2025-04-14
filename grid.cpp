@@ -2,6 +2,7 @@
 #include <iostream>
 #include <sstream>
 #include <vector>
+//this is for the issue i was having with display
 #include<cassert>
 
 #include "grid.hpp"
@@ -116,6 +117,7 @@ std::string Grid::getMissIcon() {
 }
 
 
+//silly little void statments
 void Grid::addBoat(std::string boatCords) {
     int yVal = getY(boatCords);
     int xVal = getX(boatCords);
@@ -123,8 +125,7 @@ void Grid::addBoat(std::string boatCords) {
     increaseBoatCount();
 }
 
-
-
+//  BUGGIN
 bool Grid::isBoat(int a, int b) {
     if (rowValues[a][b] == getBoatIcon()) {
         return true;
@@ -170,23 +171,7 @@ bool Grid::isNotGuessable(int a, int b) {
         return false;
     }
 }
-// checks if a string is in a grids bounds values
-bool Grid::inBounds(std::string input) const {
-    if (getY(input) <= 0 || getY(input) >= (getSize() - 1)) {
-        //the Y is out of bounds
-        return false;
-    }
-    else {
-        if (getX(input) <= 1 || getY(input) >= getSize()) {
-            //the X is out of bounds
-            return false;
-        }
-        else {
-            //the target is in bounds
-            return true;
-        }
-    }
-}
+
 
 //actualy display
 std::string Grid::display() {

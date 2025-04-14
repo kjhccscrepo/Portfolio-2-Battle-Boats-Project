@@ -2,8 +2,8 @@
 #include <iostream>
 #include <string>
 #include <cmath>
-#include "other_logic_and_functions.hpp"
 #include <vector>
+#include "other_logic_and_functions.hpp"
 
 //closes the game
 void closeGame() {

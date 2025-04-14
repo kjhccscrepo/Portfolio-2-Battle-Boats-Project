@@ -26,7 +26,7 @@ void playerVersusAI(settings iniFile) {
     enemyai.setDiff();
     enemyai.genBoats();
 
-    std::cout << std::endl << combat(player, enemyai).getName() << " has won!" << std::endl;
+    std::cout << "\n         " << combat(player, enemyai).getName() << " has won!" << std::endl;
 }
 void playerVersusPlayer(settings iniFile) {
     //for pvp
