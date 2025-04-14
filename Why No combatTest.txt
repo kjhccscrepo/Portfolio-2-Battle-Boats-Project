@@ -1,0 +1,1 @@
+There is no combatTest.cpp cause there wasn't anything that could be tested without creating dummy Player objs, and the most of the functions called are tested elsewhere.
