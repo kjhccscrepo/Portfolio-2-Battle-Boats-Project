@@ -2,7 +2,6 @@
 #include <iostream>
 #include <sstream>
 #include <vector>
-//this is for the issue i was having with display
 #include<cassert>
 
 #include "grid.hpp"
@@ -117,7 +116,6 @@ std::string Grid::getMissIcon() {
 }
 
 
-//silly little void statments
 void Grid::addBoat(std::string boatCords) {
     int yVal = getY(boatCords);
     int xVal = getX(boatCords);
@@ -125,7 +123,8 @@ void Grid::addBoat(std::string boatCords) {
     increaseBoatCount();
 }
 
-//  BUGGIN
+
+
 bool Grid::isBoat(int a, int b) {
     if (rowValues[a][b] == getBoatIcon()) {
         return true;
